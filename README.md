@@ -19,18 +19,18 @@
 - Handwritten digit recognition is the ability of a machine to recognize the human handwritten digits
 - Handwritten digits can be found in many sources such as images, papers, touch screens etc.
 - The machine should be able to recognize and classify them into predefined classes (0-9)
-- Digit recognition has many applications like number plate recognition, postal mail sorting, bank check processing etc.
+- Digit recognition has many applications like number plate recognition, bank check processing etc.
 
 ## *Project Overview*
 
 - Our aim in this project is to construct an algorithm for classification of handwritten digits
 - We use the training set to compute the SVD of each class (0-9) matrix
-- Then, we create a least squares classification algorithm which will use the relative residual vector as a measure
+- Then, we create a least squares classifier which will use the relative residual vector as a measure
 - In particular, the residuals will be calculated using the following formula:
 $$ \frac {\lVert (I-U_{k}U_{k}^{T})z \rVert_{2}}{\lVert z \rVert_{2}} $$
 - We use the first few (5-20) singular vectors as basis
 - We tune the algorithm for accuracy of classification by finding the optimal number of basis vectors
-- Then, we classify unknown test digits according to how well they can be represented in terms of the respective bases
+- Then, we classify test digits according to how well they can be represented in terms of the respective bases
 - Once we classify the digits, we check if all digits are equally easy or difficult to classify
 - We take a look at some of the difficult ones to see if they were, indeed, badly written
 - Then, we run again the model with different number of basis vectors for some of the digits
@@ -41,7 +41,8 @@ $$ \frac {\lVert (I-U_{k}U_{k}^{T})z \rVert_{2}}{\lVert z \rVert_{2}} $$
 
 ## *Data*
 
-- The data are a subset of the US Postal Service Database and were provided in the context of the course content
+- The data are a subset of the US Postal Service Database
+- They were provided in the context of the course content
 - The file `data.xslx` contains both training and test data
 - The sheet `"azip"` (`"testzip"`) holds the training (test) images as an array of dimension $256\times107$
 - The images are vectors of dimension $256$, that have been constructed from $16\times16$ images
