@@ -12,7 +12,7 @@
 2. [Project Overview](#project-overview)
 3. [Data](#data)
 4. [Resources](#resources)
-5. [Analysis](#analysis)
+5. [Analysis & Predictions](#analysis--predictions)
 
 ## *Introduction*
 
@@ -55,7 +55,7 @@ $$ \frac {\lVert (I-U_{k}U_{k}^{T})z \rVert_{2}}{\lVert z \rVert_{2}} $$
 - Packages: `numpy`, `pandas`, `matplotlib`, `seaborn`, `sklearn`
 - Software: Jupyter Notebook
 
-## *Analysis*
+## *Analysis & Predictions*
 
 ### SVD & Classification
 
