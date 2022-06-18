@@ -68,7 +68,7 @@ $$ \frac {\lVert (I-U_{k}U_{k}^{T})z \rVert_{2}}{\lVert z \rVert_{2}} $$
 - V is an $n \times n$ complex unitary matrix
 - If $M$ is real, $U$ and $V$ can also be guaranteed to be real orthogonal matrices
 - In such contexts, the *SVD* is often denoted $U \Sigma V^{T}$
-- The diagonal entries $\sigma_{i}=\Sigma_{ii}$ of $\Sigma$ are uniquely determined by $M$
+- The diagonal entries  $\sigma_{i}=\Sigma_{ii} $ of $\Sigma$ are uniquely determined by $M$
 - They are, also, known as the singular values of $M$
 - The number of non-zero singular values is equal to the *rank* of $M$
 - Thus, after we perform *SVD*, we tune the number of basis vectors
